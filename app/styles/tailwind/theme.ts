@@ -14,7 +14,7 @@ export const theme = plugin(() => {}, {
       screens: {
         sm: '640px',
         md: '768px',
-        '2xl': '1024px',
+        '2xl': '1100px',
       },
     },
     extend: {
