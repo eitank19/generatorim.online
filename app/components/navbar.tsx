@@ -8,6 +8,7 @@ import useNavToggle from '@/hooks/nav-toggle';
 
 import { Brand } from './brand';
 import { Motion } from './motion';
+import { Button } from './ui/button';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,5 +35,10 @@ export function Navbar() {
 
 const NavContent = () => {
   const path = usePathname();
-  return <></>;
+  return (
+    <>
+      <Button variant={'outline'}>מחירון ללילה</Button>
+      <Button>לתיאום הזמנה</Button>
+    </>
+  );
 };

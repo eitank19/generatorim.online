@@ -2,6 +2,8 @@ import { HtmlHTMLAttributes } from 'react';
 import Link from 'next/link';
 import { cn } from '@sohanemon/utils';
 
+import { Img } from './image';
+
 interface CompType {}
 
 export function Brand({
@@ -10,7 +12,8 @@ export function Brand({
 }: HtmlHTMLAttributes<HTMLAnchorElement> & CompType) {
   return (
     <Link href={'/'} {...props} className={cn('', {}, className)}>
-      LOGO
+      <Img className="max-md:hidden" src="/logo.svg" />
+      <Img className="md:hidden" src="/logo-m.svg" />
     </Link>
   );
 }
