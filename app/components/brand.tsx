@@ -13,7 +13,7 @@ export function Brand({
   return (
     <Link href={'/'} {...props} className={cn('', {}, className)}>
       <Img className="max-md:hidden" src="/logo.svg" />
-      <Img className="md:hidden" src="/logo-m.svg" />
+      <Img className="md:hidden" height={48} src="/logo-m.svg" width={168} />
     </Link>
   );
 }

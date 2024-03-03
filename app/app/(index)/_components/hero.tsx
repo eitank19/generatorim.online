@@ -21,11 +21,11 @@ export function Hero({ className, ...props }: HeroProps) {
         src="/banner.png"
         width={1400}
       />
-      <div className="container grid grid-cols-2 items-center py-32">
-        <Img className="scale-150" src="/hero.png" />
-        <div className="flex flex-col gap-2 md:-mr-20">
+      <div className="container flex grid-cols-2 flex-col items-center py-12 max-md:*:text-center md:grid md:py-32">
+        <Img className="scale-125 md:scale-150" src="/hero.png" />
+        <div className="flex flex-col gap-2 max-md:order-first max-md:items-center md:-mr-20">
           <div className="w-fit">
-            <TextReveal className="whitespace-nowrap text-5xl font-black">
+            <TextReveal className="text-5xl font-black md:whitespace-nowrap">
               השכרת גנרטור לכל מטרה
             </TextReveal>
             <Motion
@@ -36,14 +36,14 @@ export function Hero({ className, ...props }: HeroProps) {
           </div>
           <Motion
             as="p"
-            className="text-balance text-xl font-medium "
+            className="text-balance text-4xl font-medium max-md:leading-normal md:text-xl "
             initial="hidden"
             transition={{ delay: 1 }}
           >
             גנרטורים זמינים מיידית בעמק הירדן לקמפינג, מסיבות, אירועים, עבודה
             וכד’
           </Motion>
-          <ul>
+          <ul className="max-md:hidden">
             {benefits.map((benefit) => (
               <Motion
                 key={benefit}
@@ -59,10 +59,13 @@ export function Hero({ className, ...props }: HeroProps) {
           </ul>
         </div>
         <Button
-          className="col-span-full mx-auto mt-10 w-fit gap-3 px-4"
+          className="col-span-full mx-auto w-fit gap-3 px-4 max-md:h-auto max-md:whitespace-break-spaces max-md:py-2 max-md:text-2xl md:mt-10"
           size={'lg'}
         >
-          <Iconify className="text-background" icon="uil:whatsapp-alt" />
+          <Iconify
+            className="text-background shrink-0 max-md:size-10"
+            icon="uil:whatsapp-alt"
+          />
           פנו אלינו בווטסאפ עוד היום לבירור זמינות ושיריון תאריכים
         </Button>
       </div>

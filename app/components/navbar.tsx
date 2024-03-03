@@ -39,7 +39,7 @@ const NavContent = () => {
         <Button variant={'outline'}>מחירון ללילה</Button>
       </WhatsappWrapper>
       <WhatsappWrapper>
-        <Button>לתיאום הזמנה</Button>
+        <Button className="max-md:hidden">לתיאום הזמנה</Button>
       </WhatsappWrapper>
     </div>
   );
