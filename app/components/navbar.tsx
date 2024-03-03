@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { usePathname } from 'next/navigation';
 import { cn } from '@sohanemon/utils';
 
 import useNavToggle from '@/hooks/nav-toggle';
@@ -9,6 +8,7 @@ import useNavToggle from '@/hooks/nav-toggle';
 import { Brand } from './brand';
 import { Motion } from './motion';
 import { Button } from './ui/button';
+import { WhatsappWrapper } from './whatsapp-wrapper';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,11 +34,14 @@ export function Navbar() {
 }
 
 const NavContent = () => {
-  const path = usePathname();
   return (
-    <>
-      <Button variant={'outline'}>מחירון ללילה</Button>
-      <Button>לתיאום הזמנה</Button>
-    </>
+    <div className="flex items-center gap-2.5">
+      <WhatsappWrapper>
+        <Button variant={'outline'}>מחירון ללילה</Button>
+      </WhatsappWrapper>
+      <WhatsappWrapper>
+        <Button>לתיאום הזמנה</Button>
+      </WhatsappWrapper>
+    </div>
   );
 };
