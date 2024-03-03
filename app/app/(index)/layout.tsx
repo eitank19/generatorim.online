@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer';
 import { GoToTop } from '@/components/goto-top';
 import { Navbar } from '@/components/navbar';
 
@@ -10,6 +11,7 @@ export default function IndexLayout({ children }: IndexLayoutProps) {
     <>
       <Navbar />
       <main className="flex-1">{children}</main>
+      <Footer />
       <GoToTop />
     </>
   );

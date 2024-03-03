@@ -16,8 +16,7 @@
     "typecheck": "tsc --noEmit",
     "shadcn": "npx shadcn-ui@latest add",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
-    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "prepare": "husky install"
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
@@ -44,7 +43,6 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-tailwindcss": "^3.13.1",
-    "husky": "^8.0.3",
     "postcss": "^8.4.33",
     "prettier": "^2.8.8",
     "strapi-sdk-js": "^2.3.3",
