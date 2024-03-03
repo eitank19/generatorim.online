@@ -9,7 +9,11 @@ export default function RootTemplate({ children }: RootTemplateProps) {
     <>
       <Motion
         initial="hidden"
-        transition={{ duration: 0.4, ease: 'easeInOut' }}
+        transition={{
+          when: 'beforeChildren',
+          duration: 0.4,
+          ease: 'easeInOut',
+        }}
       >
         {children}
       </Motion>
