@@ -20,7 +20,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html suppressHydrationWarning className="default scroll-pt-16" lang="en">
         <head />
-        <body className={cn('flex min-h-screen flex-col font-sans', fonts)}>
+        <body
+          className={cn('flex min-h-screen flex-col font-sans', fonts)}
+          dir="rtl"
+        >
           <Providers>{children}</Providers>
           <Analytics />
         </body>
