@@ -25,9 +25,9 @@
     "incremental": true,
 
     "jsx": "preserve",
-    "baseUrl": "./app",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./app/*"]
     },
     "plugins": [
       {
