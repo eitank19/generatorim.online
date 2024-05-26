@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-  "dev": "next dev --turbo",
+  "dev": "next dev",
   "build": "npm install --legacy-peer-deps && next build",
   "clean": "rm -rf .next",
   "start": "next start",
